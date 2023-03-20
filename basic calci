@@ -1,0 +1,54 @@
+def add(a,b):
+    answer = a + b
+    print(str(a) + " + "+ str(b) + " = "+ str(answer))
+    
+    
+def sub(a,b):
+    answer = a - b
+    print(str(a) + " - "+ str(b) + " = "+ str(answer))
+    
+    
+    
+def mul(a,b):
+    answer = a * b
+    print(str(a) + " * "+ str(b) + " = "+ str(answer))
+    
+    
+    
+def div(a,b):
+    answer = a / b
+    print(str(a) + " / "+ str(b) + " = "+ str(answer))
+    
+    
+print("A. addition")    
+print("B. substraction")      
+print("C. multiplication")  
+print("D. divide")
+print("E. exit")
+ 
+choice = input("enter the choice:")
+ 
+if choice == "a" or choice== "A":
+    a=int(input("input the first  no"))
+    b=int(input("input the second no"))
+    add(a,b)
+elif choice == "b" or choice == "B":
+    print("substraction")
+    a=int(input("input the first  no"))
+    b=int(input("input the second no"))
+    sub(a,b)
+       
+elif choice == "c" or choice == "C" :
+    print("multiplication")
+       
+    a=int(input("input the first  no"))
+    b=int(input("input the second no"))
+    mul(a,b)
+       
+elif choice == "d" or choice == "D" :    
+    a=int(input("input the first  no"))
+    b=int(input("input the second no"))
+    div(a,b)
+elif choice == "e" or choice == "E" :
+    print("PROGRAM CLOSED ")
+    
